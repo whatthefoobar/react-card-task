@@ -1,5 +1,6 @@
 import "./App.css";
 import { useEffect, useState } from "react";
+import Card from "./components/Card";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -37,12 +38,12 @@ function App() {
     <div className="container">
       <div className="card-container">
         {users.map((user) => (
-          <div key={user.id} className="card">
-            <img src={user.avatar} alt="Avatar" style={{ width: "100px" }} />
-            <div>
-              {user.first_name} {user.last_name}
-            </div>
-          </div>
+          <Card
+            key={user.id}
+            avatar={user.avatar}
+            firstName={user.first_name}
+            lastName={user.last_name}
+          />
         ))}
       </div>
       <div className="pagination">
