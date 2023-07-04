@@ -47,6 +47,7 @@ function App() {
           Previous
         </button>
         <span>Page {page}</span>
+        {/* just noticed there are only 2 pages of users but in case there were more remove disabled property */}
         <button onClick={handleNextPage} disabled={page === 2}>
           Next
         </button>
