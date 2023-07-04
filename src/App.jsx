@@ -30,10 +30,6 @@ function App() {
     setPage((page) => page + 1);
   };
 
-  useEffect(() => {
-    console.log(users);
-  }, [users]);
-
   return (
     <div className="container">
       <div className="card-container">
