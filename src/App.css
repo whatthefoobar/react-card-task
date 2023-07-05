@@ -29,10 +29,21 @@
   margin-bottom: 10px;
 }
 
-.card div {
+.card details {
+  display: flex;
+  flex-direction: column;
   font-size: 1.2rem;
   text-align: center;
   margin: 1rem 0;
+}
+.card .details h4 {
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+.card .details a {
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
 }
 .pagination {
   display: flex;
